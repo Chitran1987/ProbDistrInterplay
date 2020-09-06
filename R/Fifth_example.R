@@ -3,7 +3,7 @@ rm(list=ls())
 ##create the random uniform distribution and plot its hstogram and amplitude###################################################################
 set.seed(15)
 X <- runif(10^4, min=0, max=2*pi)  #uniformly distributed variable X
-hist(X, prob=T, border = F, col=rgb(0.3,0.3,1,0.3), breaks = seq(0,2*pi, by=pi/50), ylim = c(0,0.30))  #histogram1 of X 
+hist(X, prob=T, border = F, col=rgb(0.3,0.3,1,0.3), breaks = seq(0,2*pi, by=pi/50), ylim = c(0,0.30))  #histogram1 of X
 
 
 X_dum <- sort(X)  #sorting X for creating trend(x-co-ordinate) over histogram1
@@ -20,7 +20,7 @@ Y_plot <- (sin(X_plot))^2
 plot(X_plot,Y_plot, type = 'l', col='red', lwd=3, xlab = 'X', ylab = 'Y=f(X)' )
 
 
-#legend('top', legend = c('X','Y=f(X)'), text.col=c(rgb(0.3,0.3,1,0.3),rgb(0.3,1,0.3,0.5)), pch = c(19,19), col=c(rgb(0.3,0.3,1,0.3),rgb(0.3,1,0.3,0.5)) ) 
+#legend('top', legend = c('X','Y=f(X)'), text.col=c(rgb(0.3,0.3,1,0.3),rgb(0.3,1,0.3,0.5)), pch = c(19,19), col=c(rgb(0.3,0.3,1,0.3),rgb(0.3,1,0.3,0.5)) )
 
 
 
